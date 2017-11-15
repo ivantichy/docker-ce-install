@@ -13,7 +13,7 @@ Just run
 
 # Oracle Linux
 
-TBD
+`curl https://raw.githubusercontent.com/ivantichy/docker-ce-install/master/installDockerOracleLinux.sh | bash`
 
 # Mac
 
