@@ -1,7 +1,8 @@
 #!/bin/bash
 
 sudo apt-get install yum -y || true
-
+cd /etc/yum.repos.d/
+wget http://yum.oracle.com/public-yum-ol7.repo
 sudo yum remove docker docker-engine docker.io -y
 
 a=$(cat << EOA
