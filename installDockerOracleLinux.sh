@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#sudo apt-get install yum yum-config-manager -y || true
+#sudo apt-get install yum yum-utils -y || true
 #cd /etc/yum.repos.d/
 #wget http://yum.oracle.com/public-yum-ol7.repo
 
