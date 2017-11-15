@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get install yum -y || true
+
 sudo yum remove docker docker-engine docker.io -y
 
 a=$(cat << EOA
