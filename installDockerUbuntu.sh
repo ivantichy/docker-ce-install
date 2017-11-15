@@ -8,7 +8,7 @@ sudo mv /etc/default/docker /etc/default/doc_ker.bak 2> /dev/null
 sudo apt-get update
 sudo apt-get install \
     linux-image-extra-$(uname -r) \
-    linux-image-extra-virtual -y
+    linux-image-extra-virtual -y --allow-change-held-packages
 
 sudo apt-get update
 sudo apt-get install \
