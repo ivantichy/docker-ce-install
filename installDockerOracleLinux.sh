@@ -6,6 +6,8 @@
 #sudo yum-config-manager --enable /etc/yum.repos.d//public-yum-ol7.repo
 
 sudo yum remove docker docker-engine docker.io -y
+# Remove obsolete config. Use daemon.json instead
+sudo mv /etc/default/docker /etc/default/doc_ker.bak 2> /dev/null
 
 a=$(cat << EOA
 [ol7_addons]
