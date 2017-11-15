@@ -1,8 +1,9 @@
 #!/bin/bash
 
-#sudo apt-get install yum yum-utils -y || true
+#sudo apt-get install yum yum-utils -y
 #cd /etc/yum.repos.d/
-#wget http://yum.oracle.com/public-yum-ol7.repo
+#sudo wget http://yum.oracle.com/public-yum-ol7.repo
+#sudo yum-config-manager --enable /etc/yum.repos.d//public-yum-ol7.repo
 
 sudo yum remove docker docker-engine docker.io -y
 
