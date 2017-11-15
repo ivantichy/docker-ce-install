@@ -1,6 +1,8 @@
 #!/bin/bash
 
 sudo apt-get remove docker docker-engine docker.io docker-ce -y
+# Remove obsolete config. Use daemon.json instead
+sudo mv /etc/default/docker /etc/default/doc_ker.bak 2> /dev/null
 
 sudo apt-get update
 
