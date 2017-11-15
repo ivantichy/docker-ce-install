@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo yum remove docker docker-engine docker.io -y
+
 a=$(cat << EOA
 [ol7_addons]
 name=Oracle Linux \$releasever Add ons (\$basearch)
@@ -26,4 +28,4 @@ output=${input//"$a"/"$b"}
 # enable [ol7_addons]
 echo "$output" > /etc/yum.repos.d/public-yum-ol7.repo
 
-yum install docker-engine -y
+sudo yum install docker-engine -y
