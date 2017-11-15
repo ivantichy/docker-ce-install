@@ -29,5 +29,5 @@ output=${input//"$a"/"$b"}
 echo "$output" > /etc/yum.repos.d/public-yum-ol7.repo
 
 sudo yum install docker-engine -y
-sudo service docker start
-sudo service docker enable
+sudo systemctl start docker
+sudo systemctl enable docker
